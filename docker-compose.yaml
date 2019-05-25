@@ -1,0 +1,19 @@
+version: '3'
+services:
+    eop:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        volumes:
+            - /tmp/.X11-unix:/tmp/.X11-unix
+            - /etc/machine-id:/etc/machine-id
+            - /var/lib/dbus:/var/lib/dbus
+            - /dev/bus/usb:/dev/bus/usb
+            - /run/pcscd:/run/pcscd
+        environment:
+            - DISPLAY=unix$DISPLAY
+            - LD_LIBRARY_PATH=/opt/eObcanka/lib/qt5.11/lib:/opt/eObcanka/lib/openssl1.0
+        privileged: true
+        network_mode: "host"
+        shm_size: 2g
+
