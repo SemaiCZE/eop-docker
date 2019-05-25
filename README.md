@@ -2,7 +2,7 @@
 
 Web [portál občana](https://obcan.portal.gov.cz) umožňuje přihlášení pomocí nových občanských průkazů s čipem. Bohužel obslužná aplikace pro Linux je vydaná pouze jako `deb` balíček pro Ubuntu.
 
-Tento repozitář obsahuje návod k vytvoření Docker image založeném na Ubuntu, který obsahuje nainstalovaný Firefox a obslužnou aplikaci eObčanka. Kvůli nutnosti přístupu k displayi a čtečce karet je nutné dát běžícímu kontejneru rozsáhlá oprávnění.
+Tento repozitář obsahuje návod k vytvoření Docker image založeném na Ubuntu, který obsahuje nainstalovaný Firefox a obslužnou aplikaci eObčanka. Kvůli nutnosti přístupu k displeji a čtečce karet je nutné dát běžícímu kontejneru rozsáhlá oprávnění.
 
 Testovaný setup:
 - Fedora 30
@@ -24,7 +24,7 @@ Provádí se následující kroky:
 - vytvoření nového profilu pro Firefox s nastavením volby `browser.tabs.remote.autostart` na `false` (opraví padání prohlížeče)
 - úprava spouštěcího skriptu `/opt/eObcanka/Identifikace/eopauthapp.sh` tak, aby nenačítal nastavení proxy z `gsettings`
 - entrypoint spustí `pcscd` démona pro komunikaci s čtečkou karet
-- command spustí Firefox s vlastním profilem a otevře spránku pro přihlášení k portálu občana
+- command spustí Firefox s vlastním profilem a otevře stránku pro přihlášení k portálu občana
 
 ## Příprava hosta
 
