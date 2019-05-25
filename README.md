@@ -31,7 +31,7 @@ Provádí se následující kroky:
 Před spuštěním je potřeba připravit hostitelský počítač, například takto:
 
 ```{.sh}
-$ sudo ./prepare-host.sh
+$ ./prepare-host.sh
 ```
 
 Tento skript provede následující akce:
