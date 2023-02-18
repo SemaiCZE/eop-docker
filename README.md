@@ -9,6 +9,8 @@ Testovaný setup:
 - Dell Latitude E7470
 - Integrovaná čtečka karet
 
+**!!! Aktualizace:** MojeID nyní podporuje přístup ke státní správě, se správným tokenem (FIDO L2 certifikace) i na úrovni vysoká (= stejné jako eObčanka). Proto na Linuxu doporučuji používat MojeID, případně BankID pro běžné přihlašování. Tento projekt už nebude aktualizován.
+
 
 ## Build
 
